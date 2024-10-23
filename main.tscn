@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://s82grvvqxhjb"]
+
+[ext_resource type="Script" path="res://time_source.gd" id="1_kuubc"]
+[ext_resource type="Texture2D" uid="uid://svs1wxgeq5gn" path="res://icon.svg" id="1_qcgdm"]
+[ext_resource type="Script" path="res://manual_timer.gd" id="2_1ch08"]
+[ext_resource type="Script" path="res://godot_timer.gd" id="4_s7m7l"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_kuubc")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="ManualTimer" type="Sprite2D" parent="."]
+position = Vector2(-181, -159)
+texture = ExtResource("1_qcgdm")
+script = ExtResource("2_1ch08")
+
+[node name="GodotTimer" type="Sprite2D" parent="."]
+position = Vector2(204, -159)
+texture = ExtResource("1_qcgdm")
+script = ExtResource("4_s7m7l")
