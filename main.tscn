@@ -12,16 +12,41 @@ script = ExtResource("1_kuubc")
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="ManualTimer" type="Sprite2D" parent="."]
-position = Vector2(-181, -159)
+position = Vector2(-291, -159)
 texture = ExtResource("1_qcgdm")
 script = ExtResource("2_1ch08")
 
 [node name="GodotTimer" type="Sprite2D" parent="."]
-position = Vector2(204, -159)
+position = Vector2(146, -159)
 texture = ExtResource("1_qcgdm")
 script = ExtResource("4_s7m7l")
 
 [node name="BadManualTimer" type="Sprite2D" parent="."]
-position = Vector2(382, -159)
+modulate = Color(0.531814, 0.531604, 1, 1)
+position = Vector2(408, -159)
 texture = ExtResource("1_qcgdm")
 script = ExtResource("5_nb17a")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -370.0
+offset_top = -305.0
+offset_right = -203.0
+offset_bottom = -241.0
+theme_override_font_sizes/font_size = 46
+text = "Manual"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 77.0
+offset_top = -305.0
+offset_right = 244.0
+offset_bottom = -241.0
+theme_override_font_sizes/font_size = 46
+text = "Godot"
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 282.0
+offset_top = -305.0
+offset_right = 547.0
+offset_bottom = -241.0
+theme_override_font_sizes/font_size = 46
+text = "Bad Manual"
