@@ -14,4 +14,4 @@ func _process(delta):
 	# Add one because we switch once at time = 0
 	var correct_switch_count = 1 + floor((get_time() - beginning_of_time) / TIMER_LENGTH)
 	
-	print("correct: ", correct_switch_count, " manual: ", $ManualTimer.switch_count, " godot: ", $GodotTimer.switch_count)
+	print("correct: ", correct_switch_count, " manual: ", $ManualTimer.switch_count, " godot: ", $GodotTimer.switch_count, " bad manual: ", $BadManualTimer.switch_count)
