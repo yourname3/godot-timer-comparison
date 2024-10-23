@@ -28,7 +28,7 @@ func _process(delta):
   timer -= delta
 ```
 
-Notice that we ADD the timer length, so that we don't throw away any additional accumulated time.
+Notice that we ADD the timer length, so that we don't throw away any additional accumulated time. (Also, note that an even better timer replaces the `if` with a `while` -- that way, the timer will fire multiple times per frame if that is the correct behavior).
 
 To understand how this project tests this, you can run it: the left Godot icon is using a manual timer, while the middle Godot icon is using a get_tree() timer. The rightmost Godot icon (the bluer one) is the "bad manual" timer code from above. Each icon counts the number of times it has fired(), and these are compared to the ground truth computed from the actual elapsed time (using Time.get_ticks_us()). The console will show that the manual timer matches the ground truth exactly while the get_tree() timer quickly drifts.
 
